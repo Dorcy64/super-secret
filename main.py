@@ -2,16 +2,12 @@ from flask import Flask, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, Form, BooleanField, validators
 from wtforms.validators import DataRequired
-import email_validator
-import os
 from flask_bootstrap import Bootstrap
-
 
 app = Flask(__name__)
 Bootstrap(app)
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
-app.config['SECRET_KEY'] = SECRET_KEY
+app.config['SECRET_KEY'] = "i493i8nv9854bb95384nfvu948b5v9840v4b0v4f"
 
 
 class LoginForm(FlaskForm):
